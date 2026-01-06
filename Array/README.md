@@ -12,3 +12,5 @@ Medium:
 * https://www.geeksforgeeks.org/problems/count-number-of-substrings4528/1
 * https://leetcode.com/problems/maximum-gap/description/
 * https://www.geeksforgeeks.org/problems/-rearrange-array-alternately-1587115620/1
+* https://leetcode.com/problems/combination-sum-iii/description/
+* https://leetcode.com/problems/combinations/

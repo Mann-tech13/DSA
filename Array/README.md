@@ -14,3 +14,4 @@ Medium:
 * https://www.geeksforgeeks.org/problems/-rearrange-array-alternately-1587115620/1
 * https://leetcode.com/problems/combination-sum-iii/description/
 * https://leetcode.com/problems/combinations/
+* https://www.geeksforgeeks.org/problems/handshakes1303/1

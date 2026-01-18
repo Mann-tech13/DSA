@@ -15,3 +15,5 @@ Medium:
 * https://leetcode.com/problems/combination-sum-iii/description/
 * https://leetcode.com/problems/combinations/
 * https://www.geeksforgeeks.org/problems/handshakes1303/1
+* https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+* https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/

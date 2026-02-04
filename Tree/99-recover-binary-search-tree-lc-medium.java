@@ -1,3 +1,4 @@
+// // https://leetcode.com/problems/recover-binary-search-tree/
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,31 +14,26 @@
  *     }
  * }
  */
-public class Solution {
-    
-    TreeNode firstElement = null;
-    TreeNode secondElement = null;
-    TreeNode prevElement = new TreeNode(Integer.MIN_VALUE);
-    
+class Solution {
+    TreeNode prev = null, first = null, second = null;
+
     public void recoverTree(TreeNode root) {
-        traverse(root);
-        int temp = firstElement.val;
-        firstElement.val = secondElement.val;
-        secondElement.val = temp;
+        evalSwappedNodes(root);
+        int temp = first.val;
+        first.val = second.val;
+        second.val = temp;
     }
-    
-    private void traverse(TreeNode root) {
-        if (root == null)
+
+    private void evalSwappedNodes(TreeNode curr) {
+        if (curr == null)
             return;
-            
-        traverse(root.left);
-        if (firstElement == null && prevElement.val >= root.val) {
-            firstElement = prevElement;
+        evalSwappedNodes(curr.left);
+        if (prev != null && prev.val > curr.val) {
+            if (first == null)
+                first = prev;
+            second = curr;
         }
-        if (firstElement != null && prevElement.val >= root.val) {
-            secondElement = root;
-        }        
-        prevElement = root;
-        traverse(root.right);
+        prev = curr;
+        evalSwappedNodes(curr.right);
     }
 }
